@@ -88,6 +88,7 @@ For MCP servers that expose **external security products** (Semgrep, Burp, Shoda
 | **[mcp-tool-poisoning-scanner][link_github_com_hem1700_mcp_tool_poisoning_scanner]** | Tool-definition auditor — Collects MCP `tools/list` output, Python and TypeScript tool schemas, or raw JSON, then runs heuristic, optional LLM-judge, anomaly, taint-graph, and sandboxed behavioral checks. JSON, SARIF, or Markdown for CI. MIT. Offline by default; the behavioral prober executes tools. |
 | **[mcpmoat][link_github_com_ducarv_mcpmoat]** | Offline MCP config and tool scanner — Finds Claude Code, Cursor, and Codex servers and checks tool poisoning, shadowing, rug pulls, plaintext secrets, unpinned packages, insecure URLs, and typosquats. JSON and CI exit codes. Apache 2.0. Optional `--llm` sends tool names and descriptions off the machine. |
 | **[MCPKernel][link_github_com_piyushptiwari1_mcpkernel]** (PyPI `mcpkernel`; [docs][link_piyushptiwari1_github_io_mcpkernel]) | MCP and A2A security gateway with a scan CLI — Tool-description poisoning, skill audits, config discovery, taint checks for secrets and PII, and YAML policy validation. Apache 2.0. |
+| **[KarmaDue][link_github_com_ashadow07_karmadue]** | Pre-install check for npm, PyPI and MCP servers — `check_install` returns block / ask / care, advisories and malicious-package reports, and tested setup fixes where a record exists. Hosted Streamable HTTP endpoint (no account for reads); the public MIT repository contains the guard, Claude Code hook, docs and seed records (hosted server code is not in the repository). Seed records are a founder-operated assessment, not independent. Official MCP Registry: `io.github.ashadow07/karmadue`. |
 
 ---
 
@@ -413,3 +414,4 @@ Open-source stacks for MCP audit telemetry, tool-call tracing, and security-adja
 [link_github_com_piyushptiwari1_mcpkernel]: https://github.com/piyushptiwari1/mcpkernel
 [link_piyushptiwari1_github_io_mcpkernel]: https://piyushptiwari1.github.io/mcpkernel/
 [link_github_com_david_wu1119_mcpguard]: https://github.com/David-Wu1119/mcpguard
+[link_github_com_ashadow07_karmadue]: https://github.com/ashadow07/karmadue
